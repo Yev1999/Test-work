@@ -1,0 +1,125 @@
+// @import '~node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-font-color);
+  font-size: 12px;
+  background-color: var(--primary-background-color);
+}
+
+body.dark {
+  background-color: var(--primary-background-color-dark-theme-body);
+  color: var(--primary-font-color-dark-theme);
+}
+
+* {
+  transition-property: background-color, transform, box-shadow, color, opacity,
+    visibility, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  // max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 70vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  
+
+  // @include mob {
+  //   // width: 320px;
+  // }
+
+  // @include tab {
+  //   padding-left: 32px;
+  //   padding-right: 32px;
+  //   width: 768px;
+  // }
+
+  // @include desk {
+
+  //   padding-left: 32px;
+  //   padding-right: 32px;
+  //   width: 1280px;
+  // }
+}
+
+.dark .container{
+  background-color: var(--primary-background-color-dark-theme);
+  color: var(--primary-font-color-dark-theme);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

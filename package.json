@@ -1,0 +1,21 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yevhenii Nalyvka <ahatina1999@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "prettier": "2.8.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-url-hash": "^0.3.0",
+    "simplelightbox": "^2.11.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
