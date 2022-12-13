@@ -1,21 +1,29 @@
 {
-  "name": "my-project",
-  "version": "1.0.0",
+  "name": "parcel-project-template",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://github.com/Yev1999/Test-work.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
-  "author": "Yevhenii Nalyvka <ahatina1999@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Yevhenii Nalivka  <ahatina1999@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "prettier": "2.8.0"
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
-    "@splidejs/splide-extension-url-hash": "^0.3.0",
-    "simplelightbox": "^2.11.0",
-    "slick-carousel": "^1.8.1"
-  }
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
