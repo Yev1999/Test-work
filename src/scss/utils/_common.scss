@@ -52,36 +52,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container {
-  position: relative;
-  width: 70vw;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  
 
-  // @include mob {
-  //   // width: 320px;
-  // }
 
-  // @include tab {
-  //   padding-left: 32px;
-  //   padding-right: 32px;
-  //   width: 768px;
-  // }
 
-  // @include desk {
-
-  //   padding-left: 32px;
-  //   padding-right: 32px;
-  //   width: 1280px;
-  // }
-}
-
-.dark .container{
-  background-color: var(--primary-background-color-dark-theme);
-  color: var(--primary-font-color-dark-theme);
-}
 a {
   text-decoration: none;
   color: inherit;

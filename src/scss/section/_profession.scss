@@ -47,3 +47,37 @@
     line-height: 1.7;
     color: #f9f9f9;
 }
+
+.container-profession {
+    width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.splide__arrow {
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    z-index: 2;
+    opacity: 0.7;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    max-width: 2em;
+}
+
+.splide__arrow--next {
+    right: 1em;
+    margin-right: -50px;
+}
+
+.splide__arrow--prev {
+    left: 1em;
+    margin-left: -50px;
+}

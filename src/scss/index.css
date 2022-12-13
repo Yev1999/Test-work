@@ -51,19 +51,6 @@ img {
   overflow: hidden;
 }
 
-.container {
-  position: relative;
-  width: 70vw;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-.dark .container {
-  background-color: var(--primary-background-color-dark-theme);
-  color: var(--primary-font-color-dark-theme);
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -155,7 +142,7 @@ button {
 .header-text {
   margin-right: auto;
   margin-left: auto;
-  Max-width: 780px;
+  max-width: 780px;
   text-align: center;
   margin-top: 30px;
   font-family: Roboto;
@@ -179,9 +166,16 @@ button {
   font-weight: 400;
 }
 
+.container-header {
+  position: relative;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
 .our-story-img {
   display: flex;
-  margin-left: 70px;
 }
 
 .story-title {
@@ -195,6 +189,7 @@ button {
 .story-img {
   margin-right: 100px;
   margin-top: 70px;
+  margin-left: 80px;
 }
 
 .srory-text {
@@ -261,7 +256,7 @@ button {
   font-family: Playfair Display;
   font-weight: 400;
   font-size: 22px;
-  color: #716e78;
+  color: #413d4b;
 }
 
 .competence-text {
@@ -528,4 +523,38 @@ button {
   font-size: 11px;
   line-height: 1.7;
   color: #f9f9f9;
+}
+
+.container-profession {
+  width: 312px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.splide__arrow {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 28%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.7;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 2em;
+  max-width: 2em;
+}
+
+.splide__arrow--next {
+  right: 1em;
+  margin-right: -50px;
+}
+
+.splide__arrow--prev {
+  left: 1em;
+  margin-left: -50px;
 }/*# sourceMappingURL=index.css.map */

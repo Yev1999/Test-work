@@ -5,24 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link
-      rel="stylesheet"
-      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
-    /> -->
     <link rel="stylesheet" href="./scss/index.css" />
   </head>
   <body>
     <main>
       <header class="header">
-        <!-- <div class="header-slide">
-        <div>
-          <img src="./IMG/hero-bg.png" alt="hero-bg" class="header-img" />
-        </div>
-         <div><img src="./IMG/hero2.png" alt="hero2" /></div>
-        <div><img src="./IMG/hero3.png" alt="hero3" /></div>
-        <div><img src="./IMG/hero5.png" alt="hero3" /></div> -->
-        <!-- </div> -->
-        <div class="container flex">
+        <div class="container-header flex">
           <img
             src="./IMG/Без назви-1.png"
             alt="logotipe"
@@ -55,8 +43,8 @@
         </div>
       </header>
 
-      <section class="our-story container">
-        <div class="our-story-img">
+      <section class="our-story">
+        <div class="our-story-img container-header">
           <div class="story-img">
             <img src="./IMG/logitipe.png" alt="logotipe" class="" />
           </div>
@@ -114,7 +102,7 @@
         <div class="your-class">
           <img src="./IMG/line-gray.png" alt="logotipe" class="line" />
         </div>
-        <ul class="play-work">
+        <ul class="play-work container-header">
           <li class="play-expirinse box-shadow-expierens">
             <img src="./IMG/work1.png" alt="development" class="img-work" />
             <h3 class="play-title-expirinse">WEB DESIGN & DEVELOPMENT</h3>
@@ -238,20 +226,16 @@
         <div class="profession-cart">
           <h2 class="profession-name">JANE GALADRIEL</h2>
           <p class="profession-work">CEO TENGKUREP</p>
-          <div class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide" data-splide-hash="slide01"></li>
-                <li class="splide__slide" data-splide-hash="slide02"></li>
-                <li class="splide__slide" data-splide-hash="slide03"></li>
-              </ul>
-            </div>
-          </div>
-          <!-- <div
-            class="splide"
+
+          <div
+            class="splide container-profession"
             role="group"
             aria-label="Splide Basic HTML Example"
           >
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">❮</button>
+              <button class="splide__arrow splide__arrow--next">❯</button>
+            </div>
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
@@ -261,7 +245,12 @@
                   <img src="./IMG/person-2.png" alt="person" />
                 </li>
                 <li class="splide__slide">
-                  <img src="./IMG/person-3.png" alt="person" />
+                  <img
+                    src="./IMG/person-3.png"
+                    width="45px"
+                    height="45px"
+                    alt="person"
+                  />
                 </li>
                 <li class="splide__slide">
                   <img src="./IMG/person-4.png" alt="person" />
@@ -271,9 +260,10 @@
                 </li>
               </ul>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
+      <script type="module" src="./JS/slide.js"></script>
     </main>
   </body>
 </html>

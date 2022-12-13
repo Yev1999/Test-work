@@ -57,7 +57,7 @@
 .header-text {
     margin-right: auto;
     margin-left: auto;
-    Max-width: 780px;
+    max-width: 780px;
     text-align: center;
     margin-top: 30px;
     font-family: Roboto;
@@ -79,4 +79,12 @@
     border-color: #00e0d0;
     font-family: HammersmithOne;
     font-weight: 400;
+}
+
+.container-header {
+    position: relative;
+    max-width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
 }
