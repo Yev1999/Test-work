@@ -1,0 +1,64 @@
+.contact-title {
+    margin-top: 70px;
+    margin-bottom: 35px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 22px;
+    color: #413d4b;
+}
+
+.contact-section {
+    display: flex;
+}
+
+.contact-section-client {
+    margin-left: 100px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    
+  }
+
+  input {
+    width: 440px;
+    padding: 13px 0px 13px 20px;
+  }
+  
+  textarea {
+    width: 440px;
+    height: 200px;
+    padding: 13px 0px 13px 20px;
+  }
+
+  .contact-btn {
+    margin-top: 21px;
+    margin-bottom: 70px;
+    padding: 13px 32px 8px 32px;
+    color: #00e0d0;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #00e0d0;
+    font-family: HammersmithOne;
+    font-weight: 400;
+    
+  }
+
+  .clients-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 380px;
+  }
+
+  .our-clients {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    &:nth-child(2n+1) {
+      margin-right: 80px;
+    }
+  }

@@ -243,6 +243,7 @@ button {
   height: 200px;
   margin-top: 170px;
   display: block;
+  z-index: 1 !important;
 }
 .play-text-btn:hover circle, .play-text-btn:hover polygon,
 .play-text-btn :focus circle,
@@ -432,6 +433,7 @@ button {
 .gallery-flex {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 70px;
 }
 
 .gallery-item {
@@ -460,7 +462,7 @@ button {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 25px;
+  margin-top: 70px;
   margin-bottom: 70px;
   padding: 8px 14px 6px 14px;
   color: #00e0d0;
@@ -473,6 +475,17 @@ button {
 
 .gallery-link-li {
   margin-top: 80px;
+}
+
+.galleryCreation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-img {
+  max-width: 267px;
+  max-height: 200px;
 }
 
 .profession {
@@ -498,7 +511,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  color: #e9e8eb;
+  color: #e0dfe5;
   font-family: Playfair Display;
   font-size: 16px;
   font-weight: 400;
@@ -526,18 +539,19 @@ button {
 }
 
 .container-profession {
-  width: 312px;
+  width: 313px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
 }
 
 .splide__arrow {
+  background: none !important;
   border: 0;
   cursor: pointer;
   padding: 0;
   position: absolute;
-  top: 28%;
+  top: 45% !important;
   transform: translateY(-50%);
   z-index: 2;
   opacity: 0.7;
@@ -557,4 +571,81 @@ button {
 .splide__arrow--prev {
   left: 1em;
   margin-left: -50px;
+}
+
+#splide01-list .is-active .img-profession {
+  width: 70px !important;
+  height: 70px !important;
+  margin-top: -11px;
+  margin-left: -13px;
+}
+
+.splide__track {
+  padding-top: 20px !important;
+}
+
+.arrow-color {
+  filter: invert(100%);
+}
+
+.contact-title {
+  margin-top: 70px;
+  margin-bottom: 35px;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 22px;
+  color: #413d4b;
+}
+
+.contact-section {
+  display: flex;
+}
+
+.contact-section-client {
+  margin-left: 100px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+input {
+  width: 440px;
+  padding: 13px 0px 13px 20px;
+}
+
+textarea {
+  width: 440px;
+  height: 200px;
+  padding: 13px 0px 13px 20px;
+}
+
+.contact-btn {
+  margin-top: 21px;
+  margin-bottom: 70px;
+  padding: 13px 32px 8px 32px;
+  color: #00e0d0;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #00e0d0;
+  font-family: HammersmithOne;
+  font-weight: 400;
+}
+
+.clients-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 380px;
+}
+
+.our-clients {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.our-clients:nth-child(2n+1) {
+  margin-right: 80px;
 }/*# sourceMappingURL=index.css.map */

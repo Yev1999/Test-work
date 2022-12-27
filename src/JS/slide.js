@@ -5,18 +5,14 @@ import "@splidejs/splide/src/css/template/default";
 const splide = new Splide(".splide", {
   perPage: 5,
   perMove: 1,
-  type: "loop",
-  height: "3rem",
-  width: "22rem",
-  focus: "center",
   updateOnMove: true,
-  padding: 1,
-  // breakpoints: {
-  //   600: {
-  //     perPage: 2,
-  //     height: "6rem",
-  //   },
-  // },
+  type: "loop",
+  height: "5rem",
+  width: "23rem",
+  focus: "center",
+  padding: 0,
+  gap: "1rem",
+  snap: true,
   drag: "free",
 });
 

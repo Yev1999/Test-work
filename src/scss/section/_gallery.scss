@@ -1,6 +1,7 @@
 .gallery-flex {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 70px;
 }
 
 .gallery-item {
@@ -32,7 +33,7 @@
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 25px;
+    margin-top: 70px;
     margin-bottom: 70px;
     padding: 8px 14px 6px 14px;
     color: #00e0d0;
@@ -41,10 +42,19 @@
     border-color: #00e0d0;
     font-family: HammersmithOne;
     font-weight: 400;
-
-  
 }
 
 .gallery-link-li {
     margin-top: 80px;
+}
+
+.galleryCreation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-img {
+    max-width: 267px;
+    max-height: 200px;
 }

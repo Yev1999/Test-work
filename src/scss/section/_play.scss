@@ -26,6 +26,7 @@
     height: 200px;
     margin-top: 170px;
     display: block;
+    z-index: 1 !important;
 
     &:hover,
 	:focus {

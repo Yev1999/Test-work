@@ -3573,18 +3573,14 @@ require("@splidejs/splide/src/css/template/default");
 const splide = new _splide.Splide(".splide", {
   perPage: 5,
   perMove: 1,
-  type: "loop",
-  height: "3rem",
-  width: "22rem",
-  focus: "center",
   updateOnMove: true,
-  padding: 1,
-  // breakpoints: {
-  //   600: {
-  //     perPage: 2,
-  //     height: "6rem",
-  //   },
-  // },
+  type: "loop",
+  height: "5rem",
+  width: "23rem",
+  focus: "center",
+  padding: 0,
+  gap: "1rem",
+  snap: true,
   drag: "free"
 });
 splide.mount({
@@ -3615,7 +3611,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50161" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50362" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

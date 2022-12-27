@@ -21,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    color: #e9e8eb;
+    color: #e0dfe5;
     font-family: Playfair Display;
     font-size: 16px;
     font-weight: 400;
@@ -49,18 +49,19 @@
 }
 
 .container-profession {
-    width: 312px;
+    width: 313px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
 }
 
 .splide__arrow {
+    background: none !important;
     border: 0;
     cursor: pointer;
     padding: 0;
     position: absolute;
-    top: 28%;
+    top: 45% !important;
     transform: translateY(-50%);
     z-index: 2;
     opacity: 0.7;
@@ -81,3 +82,24 @@
     left: 1em;
     margin-left: -50px;
 }
+
+// .splide__track {
+//     padding-left: 0;
+//     padding-right: 0;
+// }
+
+#splide01-list .is-active .img-profession {
+    width: 70px !important;
+    height: 70px !important;
+    margin-top: -11px;
+    margin-left: -13px;
+}
+
+.splide__track {
+    padding-top: 20px !important;
+}
+
+.arrow-color {
+    filter: invert(100%);
+}
+
