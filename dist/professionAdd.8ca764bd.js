@@ -117,59 +117,50 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"JS/galleryItems.js":[function(require,module,exports) {
+})({"JS/professionCards.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.galleryItems = void 0;
-const galleryItems = [{
-  picture: "/gallery/bedroom-1.jpg"
+exports.professionCards = void 0;
+const professionCards = [{
+  name: "JANE GALADRIEL",
+  position: "CEO TENGKUREP"
 }, {
-  picture: "/gallery/bedroom-2.jpg"
+  name: "DANIEL SMITH",
+  position: "TOP MENEGER"
 }, {
-  picture: "/gallery/bedroom-3.jpg"
+  name: "JADE BLONDERS",
+  position: "ADWANSED PROGRAMMER"
 }, {
-  picture: "/gallery/bedroom-4.jpg"
+  name: "JACK MARKEW",
+  position: "TOP DESIGNER"
 }, {
-  picture: "/gallery/bedroom-5.jpg"
-}, {
-  picture: "/gallery/bedroom-6.jpg"
-}, {
-  picture: "/gallery/bedroom-7.jpg"
-}, {
-  picture: "/gallery/bedroom-8.jpg"
-}, {
-  picture: "/gallery/bedroom-9.jpg"
-}, {
-  picture: "/gallery/bedroom-10.jpg"
-}, {
-  picture: "/gallery/bedroom-11.jpg"
-}, {
-  picture: "/gallery/bedroom-12.jpg"
+  name: "RUSLANA SHMIT",
+  position: "MENEGER"
 }];
-exports.galleryItems = galleryItems;
-},{}],"JS/gallery.js":[function(require,module,exports) {
+exports.professionCards = professionCards;
+},{}],"JS/professionAdd.js":[function(require,module,exports) {
 "use strict";
 
-var _galleryItems = require("./galleryItems");
-const gallery = document.querySelector(".galleryCreation");
-const galleryBtn = document.querySelector(".gallery-btn");
-const createGallery = galleryItems => {
-  let create = galleryItems.map(_ref => {
+var _professionCards = require("./professionCards");
+const professionCart = document.querySelector(".profession-cart");
+const createCart = professionCards => {
+  let create = professionCards.map(_ref => {
     let {
-      picture
+      name,
+      position
     } = _ref;
-    return `<img src="${picture}" alt="quotes" class="gallery-img" />`;
+    return `<h2 class="profession-name">${name}</h2>
+    <p class="profession-work">${position}</p>`;
   }).join("");
-  gallery.insertAdjacentHTML("afterbegin", create);
+  console.log(create);
+  professionCart.insertAdjacentHTML("afterbegin", create);
 };
-galleryBtn.addEventListener("click", () => {
-  createGallery(_galleryItems.galleryItems);
-});
-createGallery(_galleryItems.galleryItems);
-},{"./galleryItems":"JS/galleryItems.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+// createCart(professionCards);
+},{"./professionCards":"JS/professionCards.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -338,5 +329,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/gallery.js"], null)
-//# sourceMappingURL=/gallery.5a1cdb3d.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/professionAdd.js"], null)
+//# sourceMappingURL=/professionAdd.8ca764bd.js.map

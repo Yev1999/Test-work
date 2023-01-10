@@ -1,6 +1,7 @@
 import { galleryItems } from "./galleryItems";
 
 const gallery = document.querySelector(".galleryCreation");
+const galleryBtn = document.querySelector(".gallery-btn");
 
 const createGallery = (galleryItems) => {
   let create = galleryItems
@@ -11,5 +12,9 @@ const createGallery = (galleryItems) => {
 
   gallery.insertAdjacentHTML("afterbegin", create);
 };
+
+galleryBtn.addEventListener("click", () => {
+  createGallery(galleryItems);
+});
 
 createGallery(galleryItems);

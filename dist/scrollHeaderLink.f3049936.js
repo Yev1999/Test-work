@@ -117,59 +117,64 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"JS/galleryItems.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+})({"JS/scrollHeaderLink.js":[function(require,module,exports) {
+const home = document.querySelector(".home");
+const about = document.querySelector(".about");
+const expertise = document.querySelector(".expertise");
+const teams = document.querySelector(".teams");
+const works = document.querySelector(".works");
+const people = document.querySelector(".people");
+const contacts = document.querySelector(".contacts");
+const ourStory = document.querySelector(".our-story");
+const play = document.querySelector(".play");
+const competence = document.querySelector(".competence");
+const team = document.querySelector(".team");
+const gallery = document.querySelector(".gallery");
+const profession = document.querySelector(".profession");
+const contact = document.querySelector(".contact");
+home.addEventListener("click", e => {
+  ourStory.scrollIntoView({
+    block: "nearest",
+    behavior: "smooth"
+  });
 });
-exports.galleryItems = void 0;
-const galleryItems = [{
-  picture: "/gallery/bedroom-1.jpg"
-}, {
-  picture: "/gallery/bedroom-2.jpg"
-}, {
-  picture: "/gallery/bedroom-3.jpg"
-}, {
-  picture: "/gallery/bedroom-4.jpg"
-}, {
-  picture: "/gallery/bedroom-5.jpg"
-}, {
-  picture: "/gallery/bedroom-6.jpg"
-}, {
-  picture: "/gallery/bedroom-7.jpg"
-}, {
-  picture: "/gallery/bedroom-8.jpg"
-}, {
-  picture: "/gallery/bedroom-9.jpg"
-}, {
-  picture: "/gallery/bedroom-10.jpg"
-}, {
-  picture: "/gallery/bedroom-11.jpg"
-}, {
-  picture: "/gallery/bedroom-12.jpg"
-}];
-exports.galleryItems = galleryItems;
-},{}],"JS/gallery.js":[function(require,module,exports) {
-"use strict";
-
-var _galleryItems = require("./galleryItems");
-const gallery = document.querySelector(".galleryCreation");
-const galleryBtn = document.querySelector(".gallery-btn");
-const createGallery = galleryItems => {
-  let create = galleryItems.map(_ref => {
-    let {
-      picture
-    } = _ref;
-    return `<img src="${picture}" alt="quotes" class="gallery-img" />`;
-  }).join("");
-  gallery.insertAdjacentHTML("afterbegin", create);
-};
-galleryBtn.addEventListener("click", () => {
-  createGallery(_galleryItems.galleryItems);
+about.addEventListener("click", e => {
+  play.scrollIntoView({
+    block: "center",
+    behavior: "smooth"
+  });
 });
-createGallery(_galleryItems.galleryItems);
-},{"./galleryItems":"JS/galleryItems.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+expertise.addEventListener("click", e => {
+  competence.scrollIntoView({
+    block: "center",
+    behavior: "smooth"
+  });
+});
+teams.addEventListener("click", e => {
+  team.scrollIntoView({
+    block: "center",
+    behavior: "smooth"
+  });
+});
+works.addEventListener("click", e => {
+  gallery.scrollIntoView({
+    block: "center",
+    behavior: "smooth"
+  });
+});
+people.addEventListener("click", e => {
+  profession.scrollIntoView({
+    block: "center",
+    behavior: "smooth"
+  });
+});
+contacts.addEventListener("click", e => {
+  contact.scrollIntoView({
+    block: "center",
+    behavior: "smooth"
+  });
+});
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -338,5 +343,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/gallery.js"], null)
-//# sourceMappingURL=/gallery.5a1cdb3d.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/scrollHeaderLink.js"], null)
+//# sourceMappingURL=/scrollHeaderLink.f3049936.js.map
