@@ -125,6 +125,7 @@ const teams = document.querySelector(".teams");
 const works = document.querySelector(".works");
 const people = document.querySelector(".people");
 const contacts = document.querySelector(".contacts");
+const crollToContacts = document.querySelector(".crollToContacts");
 const ourStory = document.querySelector(".our-story");
 const play = document.querySelector(".play");
 const competence = document.querySelector(".competence");
@@ -199,7 +200,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54543" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63441" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

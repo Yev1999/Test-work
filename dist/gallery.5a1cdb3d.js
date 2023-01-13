@@ -167,6 +167,7 @@ const createGallery = galleryItems => {
 };
 galleryBtn.addEventListener("click", () => {
   createGallery(_galleryItems.galleryItems);
+  galleryBtn.setAttribute("disabled", "");
 });
 createGallery(_galleryItems.galleryItems);
 },{"./galleryItems":"JS/galleryItems.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -194,7 +195,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54543" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63441" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

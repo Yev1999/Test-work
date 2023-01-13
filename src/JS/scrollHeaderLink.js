@@ -5,6 +5,7 @@ const teams = document.querySelector(".teams");
 const works = document.querySelector(".works");
 const people = document.querySelector(".people");
 const contacts = document.querySelector(".contacts");
+const crollToContacts = document.querySelector(".crollToContacts");
 
 const ourStory = document.querySelector(".our-story");
 const play = document.querySelector(".play");

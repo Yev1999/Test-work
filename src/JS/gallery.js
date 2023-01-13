@@ -15,6 +15,7 @@ const createGallery = (galleryItems) => {
 
 galleryBtn.addEventListener("click", () => {
   createGallery(galleryItems);
+  galleryBtn.setAttribute("disabled", "");
 });
 
 createGallery(galleryItems);
