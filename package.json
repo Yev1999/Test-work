@@ -5,7 +5,7 @@
   "homepage": "https://github.com/Yev1999/Test-work.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Test-work/"
+    "build": "parcel build --no-minify src/*.html --public-url /Test-work/"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,5 @@
     "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "main": "index.html"
+  "main": "index.js"
 }
