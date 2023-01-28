@@ -127,7 +127,7 @@ button {
 }
 
 .header {
-  background-image: url("../IMGhero-bg.png");
+  background-image: url("../IMG/hero-bg.png");
   background-size: cover;
   height: 670px;
   width: 100%;
@@ -880,7 +880,7 @@ textarea {
   }
 }
 .footer {
-  background-image: url("../IMGhero5.png");
+  background-image: url("../IMG/hero5.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -888,7 +888,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .footer {
-    background-image: url("../IMGhero5.png");
+    background-image: url("../IMG/hero5.png");
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -896,7 +896,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    background-image: url("../IMGhero5.png");
+    background-image: url("../IMG/hero5.png");
     background-size: cover;
     height: 400px;
     width: 100%;
