@@ -11,9 +11,24 @@
 }
 
 .story-img {
-    margin-right: 100px;
-    margin-top: 70px;
-    margin-left: 80px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .story-img {
+        display: inline;
+        margin-right: 100px;
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .story-img {
+        margin-right: 100px;
+        margin-top: 70px;
+        margin-left: 80px;
+    }
 }
 
 .srory-text {
@@ -21,6 +36,17 @@
     margin-left: auto;
     Max-width: 780px;
     margin-top: 28px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #716e78;
+}
+
+.srory-texts {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 780px;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 300;
@@ -39,4 +65,8 @@
     border-color: #00e0d0;
     font-family: HammersmithOne;
     font-weight: 400;
+}
+
+.minusBtnStory {
+    display: none;
 }

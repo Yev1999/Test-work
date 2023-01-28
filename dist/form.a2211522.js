@@ -117,39 +117,34 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"JS/galleryItems.js":[function(require,module,exports) {
-"use strict";
+})({"JS/form.js":[function(require,module,exports) {
+const form = document.querySelector(".formContacts");
+const formFooter = document.querySelector(".form-footer");
+const handleSubmit = e => {
+  e.preventDefault();
+  const {
+    elements: {
+      email,
+      password,
+      subject,
+      feedback
+    }
+  } = e.currentTarget;
+  console.log(`Email: ${email.value}, Password: ${password.value}, Subject: ${subject.value}, Feedback: ${feedback.value}`);
+  e.currentTarget.reset();
+};
+form.addEventListener("submit", handleSubmit);
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.galleryItems = void 0;
-const galleryItems = [{
-  picture: "/gallery/bedroom-1.jpg"
-}, {
-  picture: "/gallery/bedroom-2.jpg"
-}, {
-  picture: "/gallery/bedroom-3.jpg"
-}, {
-  picture: "/gallery/bedroom-4.jpg"
-}, {
-  picture: "/gallery/bedroom-5.jpg"
-}, {
-  picture: "/gallery/bedroom-6.jpg"
-}, {
-  picture: "/gallery/bedroom-7.jpg"
-}, {
-  picture: "/gallery/bedroom-8.jpg"
-}, {
-  picture: "/gallery/bedroom-9.jpg"
-}, {
-  picture: "/gallery/bedroom-10.jpg"
-}, {
-  picture: "/gallery/bedroom-11.jpg"
-}, {
-  picture: "/gallery/bedroom-12.jpg"
-}];
-exports.galleryItems = galleryItems;
+// const submitFooter = (e) => {
+//   e.preventDefault();
+//   const {
+//     element: { email },
+//   } = e.currentTarget;
+//   console.log(`Email: ${email.value}`);
+//   e.currentTarget.reset();
+// };
+
+// formFooter.addEventListener("submit", submitFooter);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -319,5 +314,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/galleryItems.js"], null)
-//# sourceMappingURL=/galleryItems.3b1145ae.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/form.js"], null)
+//# sourceMappingURL=/form.a2211522.js.map

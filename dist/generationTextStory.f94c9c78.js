@@ -117,39 +117,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"JS/galleryItems.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+})({"JS/generationTextStory.js":[function(require,module,exports) {
+const storyPlusBtn = document.querySelector(".plusBtnStory");
+const storyMinusBtn = document.querySelector(".minusBtnStory");
+const storyText = document.querySelector(".srory-texts");
+storyPlusBtn.addEventListener("click", () => {
+  storyText.classList.toggle("visually-hidden");
+  storyPlusBtn.classList.replace("plusBtnStory", "minusBtnStory");
+  storyMinusBtn.classList.replace("minusBtnStory", "plusBtnStory");
 });
-exports.galleryItems = void 0;
-const galleryItems = [{
-  picture: "/gallery/bedroom-1.jpg"
-}, {
-  picture: "/gallery/bedroom-2.jpg"
-}, {
-  picture: "/gallery/bedroom-3.jpg"
-}, {
-  picture: "/gallery/bedroom-4.jpg"
-}, {
-  picture: "/gallery/bedroom-5.jpg"
-}, {
-  picture: "/gallery/bedroom-6.jpg"
-}, {
-  picture: "/gallery/bedroom-7.jpg"
-}, {
-  picture: "/gallery/bedroom-8.jpg"
-}, {
-  picture: "/gallery/bedroom-9.jpg"
-}, {
-  picture: "/gallery/bedroom-10.jpg"
-}, {
-  picture: "/gallery/bedroom-11.jpg"
-}, {
-  picture: "/gallery/bedroom-12.jpg"
-}];
-exports.galleryItems = galleryItems;
+storyMinusBtn.addEventListener("click", () => {
+  storyText.classList.toggle("visually-hidden");
+  storyMinusBtn.classList.replace("plusBtnStory", "minusBtnStory");
+  storyPlusBtn.classList.replace("minusBtnStory", "plusBtnStory");
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -319,5 +300,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/galleryItems.js"], null)
-//# sourceMappingURL=/galleryItems.3b1145ae.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/generationTextStory.js"], null)
+//# sourceMappingURL=/generationTextStory.f94c9c78.js.map

@@ -62,3 +62,19 @@ label {
       margin-right: 80px;
     }
   }
+
+  .contact {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .contact {
+      display: contents;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: contents;
+  }
+}

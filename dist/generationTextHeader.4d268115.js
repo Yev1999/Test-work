@@ -117,39 +117,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"JS/galleryItems.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+})({"JS/generationTextHeader.js":[function(require,module,exports) {
+const headerText = document.querySelector(".header-text");
+const headerPlusBtn = document.querySelector(".plusBtnHeader");
+const headerMinusBtn = document.querySelector(".minusBtnHeader");
+const hiddenText = document.querySelector(".header-text .pText");
+headerPlusBtn.addEventListener("click", () => {
+  hiddenText.classList.toggle("visually-hidden");
+  headerPlusBtn.classList.replace("plusBtnHeader", "minusBtnHeader");
+  headerMinusBtn.classList.replace("minusBtnHeader", "plusBtnHeader");
 });
-exports.galleryItems = void 0;
-const galleryItems = [{
-  picture: "/gallery/bedroom-1.jpg"
-}, {
-  picture: "/gallery/bedroom-2.jpg"
-}, {
-  picture: "/gallery/bedroom-3.jpg"
-}, {
-  picture: "/gallery/bedroom-4.jpg"
-}, {
-  picture: "/gallery/bedroom-5.jpg"
-}, {
-  picture: "/gallery/bedroom-6.jpg"
-}, {
-  picture: "/gallery/bedroom-7.jpg"
-}, {
-  picture: "/gallery/bedroom-8.jpg"
-}, {
-  picture: "/gallery/bedroom-9.jpg"
-}, {
-  picture: "/gallery/bedroom-10.jpg"
-}, {
-  picture: "/gallery/bedroom-11.jpg"
-}, {
-  picture: "/gallery/bedroom-12.jpg"
-}];
-exports.galleryItems = galleryItems;
+headerMinusBtn.addEventListener("click", () => {
+  hiddenText.classList.toggle("visually-hidden");
+  headerMinusBtn.classList.replace("plusBtnHeader", "minusBtnHeader");
+  headerPlusBtn.classList.replace("minusBtnHeader", "plusBtnHeader");
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -319,5 +301,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/galleryItems.js"], null)
-//# sourceMappingURL=/galleryItems.3b1145ae.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/generationTextHeader.js"], null)
+//# sourceMappingURL=/generationTextHeader.4d268115.js.map

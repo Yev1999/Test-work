@@ -1,22 +1,83 @@
 .team {
     background-image: url(../IMG/hero3.png);
     background-size: cover;
-    height: 710px;
+    height: 100%;
     width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    .team {
+        background-image: url(../IMG/hero3.png);
+        background-size: cover;
+        height: 710px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        background-image: url(../IMG/hero3.png);
+        background-size: cover;
+        height: 710px;
+        width: 100%;
+    }
+}
+
 .team-img {
-    width: 220px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .team-img {
+        width: 220px;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team-img {
+        width: 220px;
+        height: 230px;
+    }
 }
 
 .team-photos {
-    margin-right: 20px;
+    margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-photos {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team-photos {
+        margin-right: 20px;
+    }
 }
 
 .team-slide { 
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .team-slide {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team-slide {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
 
 .team-item {

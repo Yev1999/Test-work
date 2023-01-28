@@ -117,39 +117,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"JS/galleryItems.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+})({"JS/playVideo.js":[function(require,module,exports) {
+const buttonVideo = document.querySelector(".play-text-btn");
+const playContent = document.querySelector(".play-content");
+const addVideo = () => {
+  let video = `<iframe
+  width="100%"
+  height="550px"
+  src="https://www.youtube.com/embed/fJ0wJlOwAGI?start=15"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>`;
+  playContent.insertAdjacentHTML("afterbegin", video);
+};
+buttonVideo.addEventListener("click", () => {
+  addVideo();
+  buttonVideo.classList.toggle("visually-hidden");
 });
-exports.galleryItems = void 0;
-const galleryItems = [{
-  picture: "/gallery/bedroom-1.jpg"
-}, {
-  picture: "/gallery/bedroom-2.jpg"
-}, {
-  picture: "/gallery/bedroom-3.jpg"
-}, {
-  picture: "/gallery/bedroom-4.jpg"
-}, {
-  picture: "/gallery/bedroom-5.jpg"
-}, {
-  picture: "/gallery/bedroom-6.jpg"
-}, {
-  picture: "/gallery/bedroom-7.jpg"
-}, {
-  picture: "/gallery/bedroom-8.jpg"
-}, {
-  picture: "/gallery/bedroom-9.jpg"
-}, {
-  picture: "/gallery/bedroom-10.jpg"
-}, {
-  picture: "/gallery/bedroom-11.jpg"
-}, {
-  picture: "/gallery/bedroom-12.jpg"
-}];
-exports.galleryItems = galleryItems;
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -319,5 +305,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/galleryItems.js"], null)
-//# sourceMappingURL=/galleryItems.3b1145ae.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","JS/playVideo.js"], null)
+//# sourceMappingURL=/playVideo.52e1e9e8.js.map
