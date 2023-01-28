@@ -21,7 +21,8 @@
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-url-hash": "^0.3.0",
     "bootstrap": "^3.4.1",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "parcel-reporter-static-files-copy": "^1.5.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
