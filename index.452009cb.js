@@ -1,0 +1,2 @@
+!function(){const t=document.querySelector(".plusBtnStory"),s=document.querySelector(".minusBtnStory"),e=document.querySelector(".srory-texts");t.addEventListener("click",(()=>{e.classList.toggle("visually-hidden"),t.classList.replace("plusBtnStory","minusBtnStory"),s.classList.replace("minusBtnStory","plusBtnStory")})),s.addEventListener("click",(()=>{e.classList.toggle("visually-hidden"),s.classList.replace("plusBtnStory","minusBtnStory"),t.classList.replace("minusBtnStory","plusBtnStory")}))}();
+//# sourceMappingURL=index.452009cb.js.map

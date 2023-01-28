@@ -1,0 +1,2 @@
+const e=document.querySelector(".play-text-btn"),t=document.querySelector(".play-content");e.addEventListener("click",(()=>{t.insertAdjacentHTML("afterbegin",'<iframe\n  width="100%"\n  height="550px"\n  src="https://www.youtube.com/embed/fJ0wJlOwAGI?start=15"\n  title="YouTube video player"\n  frameborder="0"\n  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\n  allowfullscreen\n></iframe>'),e.classList.toggle("visually-hidden")}));
+//# sourceMappingURL=index.815c35f3.js.map
