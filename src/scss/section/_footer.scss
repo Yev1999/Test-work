@@ -1,5 +1,5 @@
 .footer {
-    background-image: url(/IMG/hero5.png);
+    background-image: url("../IMG/hero5.png");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    background-image: url(/IMG/hero5.png);
+    background-image: url("../IMG/hero5.png");
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 1200px) {
 .footer {
-  background-image: url(/IMG/hero5.png);
+  background-image: url("../IMG/hero5.png");
   background-size: cover;
   height: 400px;
   width: 100%;

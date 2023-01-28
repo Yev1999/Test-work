@@ -127,7 +127,7 @@ button {
 }
 
 .header {
-  background-image: url(../IMG/hero-bg.png);
+  background-image: url("../IMGhero-bg.png");
   background-size: cover;
   height: 670px;
   width: 100%;
@@ -320,7 +320,7 @@ button {
 }
 
 .play {
-  background-image: url(../IMG/siti-photo.png);
+  background-image: url("../IMGsiti-photo.png");
   background-size: cover;
   height: 550px;
   width: 100%;
@@ -479,7 +479,7 @@ button {
 }
 
 .team {
-  background-image: url(../IMG/hero3.png);
+  background-image: url("../IMGhero3.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -487,7 +487,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .team {
-    background-image: url(../IMG/hero3.png);
+    background-image: url("../IMGhero3.png");
     background-size: cover;
     height: 710px;
     width: 100%;
@@ -495,7 +495,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    background-image: url(../IMG/hero3.png);
+    background-image: url("../IMGhero3.png");
     background-size: cover;
     height: 710px;
     width: 100%;
@@ -688,7 +688,7 @@ button {
 }
 
 .profession {
-  background-image: url(../IMG/hero2.png);
+  background-image: url("../IMGhero2.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -696,7 +696,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .profession {
-    background-image: url(../IMG/hero2.png);
+    background-image: url("../IMGhero2.png");
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -704,7 +704,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .profession {
-    background-image: url(../IMG/hero2.png);
+    background-image: url("../IMGhero2.png");
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -880,7 +880,7 @@ textarea {
   }
 }
 .footer {
-  background-image: url(/IMG/hero5.png);
+  background-image: url("../IMGhero5.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -888,7 +888,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .footer {
-    background-image: url(/IMG/hero5.png);
+    background-image: url("../IMGhero5.png");
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -896,7 +896,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    background-image: url(/IMG/hero5.png);
+    background-image: url("../IMGhero5.png");
     background-size: cover;
     height: 400px;
     width: 100%;
