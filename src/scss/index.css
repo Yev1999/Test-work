@@ -1280,7 +1280,7 @@ textarea {
 }
 
 .modal-form-input {
-  max-width: 450px;
+  max-width: 200px;
   height: 20px;
   border: 1px solid rgb(33, 33, 33);
   border-radius: 4px;
@@ -1299,6 +1299,16 @@ textarea {
   fill: var(--hover-text);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-information-text {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-information-text {
+    max-width: 450px;
+  }
+}
 .modal {
   width: 90%;
   height: auto;
