@@ -1,6 +1,6 @@
 import { Splide } from "@splidejs/splide";
 import { URLHash } from "@splidejs/splide-extension-url-hash";
-import "@splidejs/splide/src/css/template/default";
+import "@splidejs/splide/css/core";
 
 const splide = new Splide(".splide", {
   perPage: 5,
