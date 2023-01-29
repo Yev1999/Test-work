@@ -32,8 +32,30 @@
     max-width: 290px;
     color: #ffffff;
     font-family: Roboto;
+    font-size: 10px;
+    line-height: 1.85;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-right-text {
+    margin-top: 25px;
+    max-width: 290px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.85;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-right-text {
+    margin-top: 25px;
+    max-width: 290px;
+    color: #ffffff;
+    font-family: Roboto;
     font-size: 14px;
     line-height: 1.85;
+}
 }
 
 .footer-tottal-flex {
@@ -77,8 +99,32 @@
     max-width: 290px;
     color: #ffffff;
     font-family: Roboto;
+    font-size: 10px;
+    line-height: 1.85;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-information-text {
+    margin-left: -20px;
+    display: flex;
+    max-width: 290px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.85;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-information-text {
+    margin-left: -20px;
+    display: flex;
+    max-width: 290px;
+    color: #ffffff;
+    font-family: Roboto;
     font-size: 14px;
     line-height: 1.85;
+}
 }
 
 
