@@ -728,6 +728,10 @@ button {
     width: 100%;
   }
 }
+.arrow-color {
+  width: 35px;
+}
+
 .profession-img {
   margin-left: auto;
   margin-right: auto;
