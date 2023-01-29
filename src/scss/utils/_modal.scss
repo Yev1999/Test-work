@@ -13,16 +13,16 @@
     letter-spacing: 0.1pt;
   }
   
-  .modal {
-    width: 528px;
-    height: 581px;
-    background-color: #fff;
-    position: absolute;
-    padding: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  // .modal {
+  //   width: 528px;
+  //   height: 581px;
+  //   background-color: #fff;
+  //   position: absolute;
+  //   padding: 40px;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
   
   .backdrop.is-hidden {
     opacity: 0;
@@ -116,7 +116,7 @@
   }
   
   .modal {
-    width: 90%;
+    width: 65%;
     height: auto;
     background-color: #fff;
     position: relative;
