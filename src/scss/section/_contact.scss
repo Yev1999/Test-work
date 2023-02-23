@@ -69,12 +69,12 @@ label {
 
   @media screen and (min-width: 768px) {
     .contact {
-      display: contents;
+      display: initial;
     }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
-    display: contents;
+    display: initial;
   }
 }

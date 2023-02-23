@@ -2,7 +2,7 @@ import { Splide } from "@splidejs/splide";
 import { URLHash } from "@splidejs/splide-extension-url-hash";
 import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 
-const splide = new Splide(".splide", {
+const splide = new Splide(".container-profession", {
   perPage: 5,
   perMove: 1,
   updateOnMove: true,
@@ -17,3 +17,11 @@ const splide = new Splide(".splide", {
 });
 
 splide.mount({ URLHash });
+
+const splideText = new Splide(".splide", {
+  pagination: true,
+  perPage: 1,
+  arrows: false,
+});
+
+splideText.mount();

@@ -1,26 +1,14 @@
-const form = document.querySelector(".formContacts");
-const formFooter = document.querySelector(".form-footer");
+const form = document.querySelectorAll(".formToHandle");
 
-const handleSubmit = (e) => {
+const formHandler = (e) => {
   e.preventDefault();
-  const {
-    elements: { email, password, subject, feedback },
-  } = e.currentTarget;
-  console.log(
-    `Email: ${email.value}, Password: ${password.value}, Subject: ${subject.value}, Feedback: ${feedback.value}`
-  );
+  const formData = new FormData(e.target);
+  const formProps = Object.fromEntries(formData);
+  console.log(formProps);
   e.currentTarget.reset();
 };
 
-form.addEventListener("submit", handleSubmit);
-
-// const submitFooter = (e) => {
-//   e.preventDefault();
-//   const {
-//     element: { email },
-//   } = e.currentTarget;
-//   console.log(`Email: ${email.value}`);
-//   e.currentTarget.reset();
-// };
-
-// formFooter.addEventListener("submit", submitFooter);
+for (let i = 0; i < form.length; i++) {
+  let el = form[i];
+  el.addEventListener("submit", formHandler);
+}
