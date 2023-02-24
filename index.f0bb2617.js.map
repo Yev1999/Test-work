@@ -1,1 +1,0 @@
-{"mappings":"AAAeA,SAASC,cAAc","sources":["src/JS/persone.js"],"sourcesContent":["const slide1 = document.querySelector(\".splide__list #slide1\");\n\n// const generationName = () => {\n//   if (slide1 === \".is-active\") {\n//     console.log(111);\n//   }\n// };\n"],"names":["document","querySelector"],"version":3,"file":"index.f0bb2617.js.map"}
