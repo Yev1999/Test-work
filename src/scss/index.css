@@ -301,11 +301,6 @@ button {
   border-radius: 50%;
 }
 
-.splide__pagination {
-  flex-wrap: nowrap !important;
-  bottom: 2.5em !important;
-}
-
 #header-slider {
   position: static !important;
 }
@@ -891,40 +886,6 @@ button {
   max-width: 2em;
 }
 
-.splide__arrow--next {
-  right: 2em;
-  margin-right: -30px;
-}
-
-@media screen and (min-width: 768px) {
-  .splide__arrow--next {
-    right: 1em;
-    margin-right: -50px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .splide__arrow--next {
-    right: 1em;
-    margin-right: -50px;
-  }
-}
-.splide__arrow--prev {
-  left: 2em;
-  margin-left: -35px;
-}
-
-@media screen and (min-width: 768px) {
-  .splide__arrow--prev {
-    left: 1em;
-    margin-right: -50px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .splide__arrow--prev {
-    left: 0em !important;
-    margin-right: -50px;
-  }
-}
 #splide01-list .is-active .img-profession {
   width: 70px !important;
   height: 70px !important;
@@ -938,6 +899,66 @@ button {
 
 .arrow-color {
   filter: invert(100%);
+}
+
+.splide__pagination__page.person-1 {
+  width: 45px;
+  height: 45px;
+  background: url(../IMG/person-1.png) !important;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination__page.person-2 {
+  width: 45px;
+  height: 45px;
+  background: url(../IMG/person-2.png) !important;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination__page.person-3 {
+  width: 45px;
+  height: 45px;
+  background: center url(../IMG/person-3.png) !important;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination__page.person-4 {
+  width: 45px;
+  height: 45px;
+  background: url(../IMG/person-4.png) !important;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination__page.person-5 {
+  width: 45px;
+  height: 45px;
+  background: url(../IMG/persone-5.png) !important;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination__page {
+  top: 100px;
+}
+
+.splide__pagination__page.is-active {
+  transform: scale(1.2) !important;
+  z-index: 1;
+}
+
+.splide__arrow--next {
+  position: relative !important;
+  right: -51em !important;
+  bottom: -307px !important;
+}
+
+.splide__arrow--prev {
+  position: relative !important;
+  left: 28em !important;
+  bottom: -341px !important;
+}
+
+.splide__arrows {
+  position: absolute;
 }
 
 .contact-title {
