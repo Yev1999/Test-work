@@ -102,6 +102,10 @@ button {
    not supported by any browser */
 }
 
+.text-transform {
+  text-transform: uppercase;
+}
+
 .header-link-style {
   margin-right: 25px;
   color: #f2f1f4;
