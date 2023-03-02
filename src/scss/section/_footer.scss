@@ -175,7 +175,6 @@
 }
 
 ::placeholder {
-    // color: #ffffff;
     opacity: 1;
   }
   :-ms-input-placeholder {
@@ -211,15 +210,12 @@
   .network-footer-icon {
     border: 1px solid #ffffff;
     border-radius: 50%;
-    padding: 7px;
+    padding: 5px 5px 2px;
+    margin-left: 8px;
   }
 
   .footer-social-icon {
     fill: #ffffff;
-  }
-
-  .network-footer-icon:not(last-child) {
-    margin-left: 8px;
   }
 
   .bottonFooter {
