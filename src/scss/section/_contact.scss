@@ -8,12 +8,22 @@
 }
 
 .contact-section {
-    display: flex;
+    display: block;
 }
 
-.contact-section-client {
-    margin-left: 100px;
+@media screen and (min-width: 1000px) {
+  .contact-section {
+    display: flex;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .contact-section {
+    display: flex;
+}
+}
+
+
 
 label {
     display: flex;
@@ -71,14 +81,55 @@ label {
     display: none;
   }
 
+    @media screen and (min-width: 768px) {
+      .contact {
+        display: initial;
+      }
+  }
+
+    @media screen and (min-width: 1200px) {
+      .contact {
+       display: initial;
+    }
+  }
+
+  
+
   @media screen and (min-width: 768px) {
-    .contact {
-      display: initial;
+    .contact-section-form  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+    .formContacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-title {
+      margin-top: 0;
+    }
+    .contact-section-client {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
     }
 }
-
-@media screen and (min-width: 1200px) {
-  .contact {
-    display: initial;
+@media screen and (min-width: 1000px) {
+  .contact-section-form  {
+   display: flow-root;
+   margin-top: 70px;
+}
+  .formContacts {
+    display: flow-root;
   }
+  .contact-title {
+    margin-top: 0;
+  }
+  .contact-section-client {
+    display: flow-root;
+    margin-left: 100px;
+    margin-top: 70px;
+}
 }

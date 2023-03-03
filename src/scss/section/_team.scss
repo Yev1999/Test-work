@@ -10,7 +10,7 @@
     .team {
         background-image: url("../IMG/hero3.png");
         background-size: cover;
-        height: 710px;
+        height: 100%;
         width: 100%;
     }
 }
@@ -29,7 +29,7 @@
     height: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1010px) {
     .team-img {
         width: 220px;
         height: 230px;
@@ -49,18 +49,18 @@
     margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1010px) {
     .team-photos {
         margin-right: 20px;
-        margin-left: 0px;
-        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .team-photos {
         margin-right: 20px;
-        margin-left: 0px;
+        margin-left: 20px;
         margin-bottom: 0px;
     }
 }
@@ -71,7 +71,7 @@
     flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1010px) {
     .team-slide {
         display: flex;
         justify-content: center;

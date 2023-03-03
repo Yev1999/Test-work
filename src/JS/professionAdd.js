@@ -14,5 +14,3 @@ const createCart = (professionCards) => {
 
   professionCart.insertAdjacentHTML("afterbegin", create);
 };
-
-// createCart(professionCards);

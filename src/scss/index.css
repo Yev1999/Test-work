@@ -571,7 +571,7 @@ textarea {
   .team {
     background-image: url("../IMG/hero3.png");
     background-size: cover;
-    height: 710px;
+    height: 100%;
     width: 100%;
   }
 }
@@ -588,7 +588,7 @@ textarea {
   height: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1010px) {
   .team-img {
     width: 220px;
     height: 230px;
@@ -606,17 +606,17 @@ textarea {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1010px) {
   .team-photos {
     margin-right: 20px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-photos {
     margin-right: 20px;
-    margin-left: 0px;
+    margin-left: 20px;
     margin-bottom: 0px;
   }
 }
@@ -626,7 +626,7 @@ textarea {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1010px) {
   .team-slide {
     display: flex;
     justify-content: center;
@@ -993,13 +993,19 @@ textarea {
 }
 
 .contact-section {
-  display: flex;
+  display: block;
 }
 
-.contact-section-client {
-  margin-left: 100px;
+@media screen and (min-width: 1000px) {
+  .contact-section {
+    display: flex;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .contact-section {
+    display: flex;
+  }
+}
 label {
   display: flex;
   flex-direction: column;
@@ -1061,6 +1067,44 @@ textarea {
 @media screen and (min-width: 1200px) {
   .contact {
     display: initial;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-title {
+    margin-top: 0;
+  }
+  .contact-section-client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .contact-section-form {
+    display: flow-root;
+    margin-top: 70px;
+  }
+  .formContacts {
+    display: flow-root;
+  }
+  .contact-title {
+    margin-top: 0;
+  }
+  .contact-section-client {
+    display: flow-root;
+    margin-left: 100px;
+    margin-top: 70px;
   }
 }
 .footer {

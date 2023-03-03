@@ -22,17 +22,3 @@ const teamCompany = [
 ];
 
 const professionName = document.querySelector(".profession-cart");
-
-// const generationName = (teamCompany) => {
-//   console.log(teamCompany);
-//   let team = teamCompany
-//     .map(({ namePersone, position }) => {
-//       return `<h2 class="profession-name">${namePersone}</h2>
-//       <p class="profession-work">${position}</p>`;
-//     })
-//     .join("");
-
-//   professionName.insertAdjacentHTML("afterbegin", team);
-// };
-
-// generationName(teamCompany);
