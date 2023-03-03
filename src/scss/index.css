@@ -259,13 +259,16 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
-  padding: 8px 14px 6px 14px;
   color: #00e0d0;
   border-radius: 2px;
   border-style: solid;
   border-color: #00e0d0;
   font-family: HammersmithOne;
   font-weight: 400;
+  width: 105px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-header {
@@ -328,6 +331,10 @@ textarea {
   color: #413d4b;
 }
 
+.our-story {
+  height: 400px;
+}
+
 .story-img {
   display: none;
 }
@@ -373,14 +380,16 @@ textarea {
 .btn-blue-srory {
   display: flex;
   margin-top: 25px;
-  margin-bottom: 70px;
-  padding: 8px 14px 6px 14px;
   color: #00e0d0;
   border-radius: 2px;
   border-style: solid;
   border-color: #00e0d0;
   font-family: HammersmithOne;
   font-weight: 400;
+  width: 105px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
 }
 
 .minusBtnStory {
@@ -686,13 +695,16 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   margin-top: 25px;
-  padding: 8px 14px 6px 14px;
   color: #00e0d0;
   border-radius: 2px;
   border-style: solid;
   border-color: #00e0d0;
   font-family: HammersmithOne;
   font-weight: 400;
+  width: 120px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-class {
@@ -734,13 +746,16 @@ textarea {
   margin-left: auto;
   margin-top: 70px;
   margin-bottom: 70px;
-  padding: 8px 14px 6px 14px;
   color: #00e0d0;
   border-radius: 2px;
   border-style: solid;
   border-color: #00e0d0;
   font-family: HammersmithOne;
   font-weight: 400;
+  width: 120px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-link-li {
