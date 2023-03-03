@@ -34,15 +34,19 @@ label {
   }
 
   .contact-btn {
-    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
     margin-bottom: 70px;
-    padding: 13px 32px 8px 32px;
     color: #00e0d0;
     border-radius: 2px;
     border-style: solid;
     border-color: #00e0d0;
     font-family: HammersmithOne;
     font-weight: 400;
+    width: 105px;
+    height: 40px;
     
   }
 

@@ -114,3 +114,7 @@ button {
 textarea {
   resize: none;
 }
+
+.hover-btn:hover {
+  transform: scale(1.1);
+}
