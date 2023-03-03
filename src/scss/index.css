@@ -1314,10 +1314,14 @@ textarea {
 }
 
 .network-footer-icon {
+  display: flex;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  padding: 5px 5px 2px;
+  width: 30px;
+  height: 30px;
   margin-left: 8px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social-icon {
@@ -1343,6 +1347,11 @@ textarea {
 .footerCopyright {
   color: #ffffff;
   margin-right: 25px;
+}
+
+.fa-brands {
+  font-size: 1.6em;
+  color: #ffffff;
 }
 
 .label-input {
